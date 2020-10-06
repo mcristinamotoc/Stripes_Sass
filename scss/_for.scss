@@ -1,0 +1,6 @@
+//Bucle for para incrementar animation-delay
+@for $i from 1 through 5 {
+    #stripe#{$i} {
+        animation-delay: $i+0.1s;
+    }
+}

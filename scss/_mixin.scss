@@ -1,0 +1,51 @@
+//Cada bloque con su color, tamaño, posición y texto 
+@mixin block ($color) {
+    background-color: $color;
+    height: 100vh;
+    width: 20%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+//Bloque Uno
+.blockUno {
+    @include block($colorUno);
+    left: 0;
+    animation-name: stripe1;
+    animation-duration: 1s;
+}
+
+//Bloque Dos
+.blockDos {
+    @include block($colorDos);
+    left: 20vw;
+    animation-name: stripe2;
+    animation-duration: 1s;
+}
+
+//Bloque Tres
+.blockTres {
+    @include block($colorTres);
+    left: 40vw;
+    animation-name: stripe3;
+    animation-duration: 1s;
+}
+
+//Bloque Cuatro
+.blockQuatro {
+    @include block($colorQuatro);
+    left: 60vw;
+    animation-name: stripe4;
+    animation-duration: 1s;
+}
+
+//Bloque Cinco 
+.blockCinco {
+    @include block($colorCinco);
+    left: 80vw;
+    animation-name: stripe5;
+    animation-duration: 1s;
+}

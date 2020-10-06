@@ -1,0 +1,25 @@
+    //Añadir tiras blancas
+    .strips :before {
+        content: "";
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        width: 100vh;
+        height: 100%;
+        background: $background;
+        opacity: 0.05;
+        -webkit-transform-origin: center center;
+        transform-origin: center center;
+        -webkit-transform: skew(30deg) scaleY(1) translate(0, 0);
+        transform: skew(30deg) scaleY(1) translate(0, 0);
+        transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+    }
+    
+    //Al poner el cursor sobre un elemento, se modifica el efecto franja blanca 
+     :hover {
+         ::before {
+            opacity: 0.1;
+            transform: skew(1deg) scaleY(1) translate(0, 0);
+        }
+    }
